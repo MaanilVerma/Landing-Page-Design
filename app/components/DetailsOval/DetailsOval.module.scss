@@ -1,0 +1,49 @@
+.oval-container {
+  border-radius: 75px 75px;
+  padding: 16px;
+  text-align: center;
+  width: 260px;
+  height: 132px;
+  border: 2px solid #756e52;
+  background: linear-gradient(to right, #2b2a27, #53524e);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 260px;
+  margin: 2rem 0;
+  cursor: pointer;
+
+  &:nth-child(odd) {
+    transform: translateY(-20px);
+  }
+  &:nth-child(even) {
+    transform: translateY(20px);
+  }
+
+  p {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    font-weight: 500;
+  }
+  .arrow-container {
+    position: relative;
+    margin-top: 1rem;
+    .arrow {
+      z-index: 5;
+      position: relative;
+    }
+    .circle {
+      width: 26px;
+      height: 26px;
+      border-radius: 100px;
+      background-color: #756e52;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 4;
+    }
+  }
+}
