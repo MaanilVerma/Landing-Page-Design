@@ -20,6 +20,9 @@ const HeroSection = () => {
               alt="play icon"
               width={60}
               height={60}
+              priority
+              placeholder="blur"
+              blurDataURL="/assets/play-icon.png"
             />
             <p>
               View Demos <br /> and Highlights
@@ -31,6 +34,7 @@ const HeroSection = () => {
             className={styles["hero-image"]}
             src="/assets/hero-img.png"
             alt="hero section abstract shape"
+            loading="eager"
           />
         </div>
         <div className={styles["hero-subtext-container"]}>
